@@ -3,63 +3,63 @@
     "test": "Health Check",
     "success": true,
     "message": "Backend is healthy",
-    "timestamp": "2025-08-01T18:18:20.076504",
+    "timestamp": "2025-08-01T18:18:34.027593",
     "details": null
   },
   {
-    "test": "User Registration",
+    "test": "User Login",
     "success": true,
-    "message": "User registered successfully",
-    "timestamp": "2025-08-01T18:18:20.321243",
+    "message": "User logged in successfully",
+    "timestamp": "2025-08-01T18:18:34.281055",
     "details": null
   },
   {
     "test": "Protected Route Auth",
     "success": true,
     "message": "JWT authentication working",
-    "timestamp": "2025-08-01T18:18:20.333855",
+    "timestamp": "2025-08-01T18:18:34.292677",
     "details": null
   },
   {
     "test": "Coin Data API",
     "success": true,
     "message": "Retrieved 10 coins with EMA data",
-    "timestamp": "2025-08-01T18:18:20.345085",
+    "timestamp": "2025-08-01T18:18:34.302300",
     "details": null
   },
   {
     "test": "Bot Config GET",
     "success": true,
     "message": "Retrieved bot configuration",
-    "timestamp": "2025-08-01T18:18:20.396086",
+    "timestamp": "2025-08-01T18:18:34.354067",
     "details": null
   },
   {
     "test": "Bot Config CRUD",
     "success": true,
     "message": "Bot configuration CRUD operations working",
-    "timestamp": "2025-08-01T18:18:20.425787",
+    "timestamp": "2025-08-01T18:18:34.378686",
     "details": null
   },
   {
     "test": "Bot Start (No Subscription)",
     "success": true,
     "message": "Correctly blocked start without subscription",
-    "timestamp": "2025-08-01T18:18:20.476718",
+    "timestamp": "2025-08-01T18:18:34.390458",
     "details": null
   },
   {
     "test": "Bot Control Endpoints",
     "success": true,
     "message": "Bot control endpoints working with proper validation",
-    "timestamp": "2025-08-01T18:18:20.485636",
+    "timestamp": "2025-08-01T18:18:34.443127",
     "details": null
   },
   {
     "test": "WebSocket Connection",
-    "success": false,
-    "message": "WebSocket error: BaseEventLoop.create_connection() got an unexpected keyword argument 'timeout'",
-    "timestamp": "2025-08-01T18:18:20.501468",
+    "success": true,
+    "message": "Received real-time data for 10 coins",
+    "timestamp": "2025-08-01T18:18:34.520510",
     "details": null
   }
 ]
