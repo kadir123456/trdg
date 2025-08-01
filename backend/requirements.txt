@@ -11,5 +11,3 @@ websockets
 requests
 numpy
 pandas
-ta
-python-binance
