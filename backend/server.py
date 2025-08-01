@@ -69,11 +69,15 @@ BINANCE_API_KEY = os.environ.get('BINANCE_API_KEY', 'placeholder_key')
 BINANCE_API_SECRET = os.environ.get('BINANCE_API_SECRET', 'placeholder_secret')
 
 # Initialize Binance client with testnet for development
-try:
-    binance_client = Client(BINANCE_API_KEY, BINANCE_API_SECRET, testnet=True)
-except Exception as e:
-    logger.error(f"Binance client initialization failed: {e}")
+if BINANCE_AVAILABLE and BINANCE_API_KEY != 'placeholder_key':
+    try:
+        binance_client = Client(BINANCE_API_KEY, BINANCE_API_SECRET, testnet=True)
+    except Exception as e:
+        logger.error(f"Binance client initialization failed: {e}")
+        binance_client = None
+else:
     binance_client = None
+    logger.info("Using mock data - Binance API not configured")
 
 # WebSocket connection manager
 class ConnectionManager:
