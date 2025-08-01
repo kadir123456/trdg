@@ -295,7 +295,7 @@ class BinanceBotTester:
         try:
             ws_url = f"{BACKEND_URL.replace('https://', 'wss://')}/api/ws"
             
-            async with websockets.connect(ws_url, timeout=15) as websocket:
+            async with websockets.connect(ws_url) as websocket:
                 # Wait for first message
                 message = await asyncio.wait_for(websocket.recv(), timeout=10)
                 data = json.loads(message)
