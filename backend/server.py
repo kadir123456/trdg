@@ -15,9 +15,12 @@ import websockets
 import requests
 import pandas as pd
 import numpy as np
-from binance.client import Client
-from binance.websockets import BinanceSocketManager
-import ta
+try:
+    from binance.client import Client
+    BINANCE_AVAILABLE = True
+except ImportError:
+    BINANCE_AVAILABLE = False
+    Client = None
 import uuid
 from dotenv import load_dotenv
 import logging
